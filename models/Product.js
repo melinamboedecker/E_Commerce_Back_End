@@ -15,15 +15,11 @@ Product.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
-    }
-  },
-  {
+    },
     product_name: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
-  },
-  {
+    },
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false,
@@ -31,8 +27,6 @@ Product.init(
         isDecimal: true,
       },
     },
-  },
-  {
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -40,16 +34,18 @@ Product.init(
       validate: {
         isNumeric: true,
       }
-    }
-  },
-  {
+    },
     category_id: {
       type: DataTypes.INTEGER,
       //* References the `Category` model's `id`.
-    }
+      references: {
+        model: 'category',
+        key: 'id'
+      }
+    },
   },
   {
-    sequelize,
+    sequelize, 
     timestamps: false,
     freezeTableName: true,
     underscored: true,
