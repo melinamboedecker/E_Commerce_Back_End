@@ -4,7 +4,7 @@ Back end database manager for e-commerce.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## Description: 
-This is a working Express.js API that uses Sequelize to interact with a MySQL database. You can use API testing tools to interact with the e-commerce database. The database has tables for products, categories, tags, and product tags.
+This is an Express.js API that uses Sequelize to interact with a MySQL database. You can use API testing tools to interact with the e-commerce database. The database has tables for products, categories, tags, and product tags.
 
 ## Table of Contents: 
 * [Installation](#installation)
