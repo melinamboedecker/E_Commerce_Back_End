@@ -40,7 +40,7 @@ Product.belongsToMany(Tag, {
 //     model: ProductTag,
 //     unique: false
 //   },
-//     //define an alias
+//     //define an alias n   
 //     as: 'Another Alias to be named'
 // });
 
