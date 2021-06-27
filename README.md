@@ -23,67 +23,69 @@ This is an Express.js API that uses Sequelize to interact with a MySQL database.
 
 ## Usage: 
   
-Use an API testing tool such as Postman or Insomnia to interact with the database.  Below are the GET, POST, PUT, and DELETE routes.  
-
+Use an API testing tool such as Postman or Insomnia to interact with the database.  
+ 
 To view all categories:
-```GET http://localhost:3001/api/categories```
+  * ```GET http://localhost:3001/api/categories```
 
 To view all products:
-```GET http://localhost:3001/api/products```
+  * ```GET http://localhost:3001/api/products```
 
 To view all tags:
-```GET http://localhost:3001/api/tags```
+  * ```GET http://localhost:3001/api/tags```
 
 To view a single category:
-```GET http://localhost:3001/api/categories/:id```
-where ```:id``` is the id of the category you want to view
+  * ```GET http://localhost:3001/api/categories/:id```
+  * ```:id``` is the id of the category you want to view
 
 To view a single product: 
-```GET http://localhost:3001/api/products/:id```
-where ```:id``` is the id of the product you want to view
+  * ```GET http://localhost:3001/api/products/:id```
+  * ```:id``` is the id of the product you want to view
 
 To view a single tag:
-```GET http://localhost:3001/api/tags/:id```
-where ```:id``` is the id of the tag you want to view
+  * ```GET http://localhost:3001/api/tags/:id```
+  * ```:id``` is the id of the tag you want to view
 
 To create a new categrory:
-```POST  http://localhost:3001/api/categories```
-enter key/value pairs, refer to category table for column names
+  * ```POST  http://localhost:3001/api/categories```
+  * Enter key/value pairs, refer to models folder for columns.
 
 
 To create a new product:
-```POST  http://localhost:3001/api/products```
-enter key/value pairs, refer to product table for column names
-/////ENTER tagIds INSTRUCTIONS/////
+  * ```POST  http://localhost:3001/api/products```
+  * Enter key/value pairs, refer to models folder for columns.
+  * When entering a new product, stock value will default to 10.
+  * Use a separate line to enter each tag id, and be sure to include the index in the key. Here is an example if you wish to enter tag ids 3 and 4:
+     * ```tagIds[0]: 3```
+     * ```tagIds[1]: 4```
 
 To create a new tag:
-```POST  http://localhost:3001/api/tags```
-enter key/value pairs, refer to tag table for column names
+  * ```POST  http://localhost:3001/api/tags```
+  * Enter key/value pairs, refer to models folder for columns.
 
 To alter a single category:
-```POST  http://localhost:3001/api/categories/:id```
-enter key/value pairs for the attributes you want to change
+  * ```PUT  http://localhost:3001/api/categories/:id```
+  * Enter key/value pairs for the fields you want to change
 
 To alter a single product:
-```POST  http://localhost:3001/api/products/:id```
-enter key/value pairs for the attributes you want to change
+  * ```PUT  http://localhost:3001/api/products/:id```
+  * Enter key/value pairs for the fields you want to change.
 
 To alter a single tag:
-```POST  http://localhost:3001/api/tags/:id```
-enter key/value pairs for the attributes you want to change
-
+  * ```PUT  http://localhost:3001/api/tags/:id```
+  * Enter key/value pairs for the fields you want to change.
 
 To delete a single category:
-```GET http://localhost:3001/api/categories/:id```
-where ```:id``` is the id of the category you want to delete
+  * ```DELETE http://localhost:3001/api/categories/:id```
+  *  ```:id``` is the id of the category you want to delete
 
 To delete a single product:
-```GET http://localhost:3001/api/products/:id```
-where ```:id``` is the id of the product you want to delete
+  * ```DELETE http://localhost:3001/api/products/:id```
+  *  ```:id``` is the id of the product you want to delete
 
 To delete a single tag:
-```GET http://localhost:3001/api/tags/:id```
-where ```:id``` is the id of the tag you want to delete
+  * ```DELETE http://localhost:3001/api/tags/:id```
+  *  ```:id``` is the id of the tag you want to delete
 
 ![Screenshot](assets/e_commerce_backend.gif)
 
