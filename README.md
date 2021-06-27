@@ -96,7 +96,7 @@ To delete a single tag:
   * ```DELETE http://localhost:3001/api/tags/:id```
   *  ```:id``` is the id of the tag you want to delete
 
-![Screenshot](assets/e_commerce_backend.gif)
+![Screenshot](assets/DELETEroutes.gif)
 
 
 ## License: 
