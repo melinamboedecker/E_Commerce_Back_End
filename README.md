@@ -50,10 +50,11 @@ To view a single tag:
   * ```GET http://localhost:3001/api/tags/:id```
   * ```:id``` is the id of the tag you want to view
 
+![Screenshot](assets/GETroutes_individual.gif)
+
 To create a new categrory:
   * ```POST  http://localhost:3001/api/categories```
   * Enter key/value pairs, refer to models folder for columns.
-
 
 To create a new product:
   * ```POST  http://localhost:3001/api/products```
