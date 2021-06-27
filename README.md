@@ -14,7 +14,12 @@ This is an Express.js API that uses Sequelize to interact with a MySQL database.
 * [Questions](#questions) 
 
 ## Installation: 
-After cloning the repo to your local device, be sure to have Node.js and MySQL installed. Use the schema.sql file in the db folder to create the database in MySQL.  Update your MySQL user and password in the .env.EXAMPLE file then rename it to '.env'. Run npm install, to install the dependencies. Run npm start to initialize the server on your local machine, then you can interact with it using an API testing tool such as Postman or Insomnia.  
+* You will need to have Node.js and MySQL installed. 
+* Run ```npm install``` in your bash terminal to install the dependencies.
+* Update your MySQL user and password in the ``` .env.EXAMPLE ``` file then rename it to ``` .env ```. 
+* Run ```DROP DATABASE IF EXISTS ecommerce_db;``` and then```CREATE DATABASE ecommerce_db;``` in mySQL Shell to create the database in MySQL. 
+* Run ```npde seeds/index.js``` in your bash terminal to seed the database
+* Run ```npm start``` to initialize the server on your local machine, then you can interact with it using an API testing tool such as Postman or Insomnia.  
 
 ## Usage: 
   
