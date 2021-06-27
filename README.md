@@ -36,6 +36,8 @@ To view all products:
 To view all tags:
   * ```GET http://localhost:3001/api/tags```
 
+![Screenshot](assets/GETroutes_all.gif)
+
 To view a single category:
   * ```GET http://localhost:3001/api/categories/:id```
   * ```:id``` is the id of the category you want to view
