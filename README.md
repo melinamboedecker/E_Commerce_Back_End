@@ -82,6 +82,8 @@ To alter a single tag:
   * ```PUT  http://localhost:3001/api/tags/:id```
   * Enter key/value pairs for the fields you want to change.
 
+![Screenshot](assets/PUTroutes.gif)
+
 To delete a single category:
   * ```DELETE http://localhost:3001/api/categories/:id```
   *  ```:id``` is the id of the category you want to delete
