@@ -21,6 +21,8 @@ This is an Express.js API that uses Sequelize to interact with a MySQL database.
 * Run ```node seeds/index.js``` in your bash terminal to seed the database
 * Run ```npm start``` to initialize the server on your local machine, then you can interact with it using an API testing tool such as Postman or Insomnia.  
 
+![Screenshot](assets/databaseCreateSeedandStartServer.gif)
+
 ## Usage: 
   
 Use an API testing tool such as Postman or Insomnia to interact with the database.  
