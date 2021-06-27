@@ -68,6 +68,8 @@ To create a new tag:
   * ```POST  http://localhost:3001/api/tags```
   * Enter key/value pairs, refer to models folder for columns.
 
+![Screenshot](assets/POSTroutes.gif)
+
 To alter a single category:
   * ```PUT  http://localhost:3001/api/categories/:id```
   * Enter key/value pairs for the fields you want to change
